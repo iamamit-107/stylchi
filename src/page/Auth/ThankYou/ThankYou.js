@@ -22,9 +22,9 @@ const ThankYou = () => {
                         </p>
 
                         <div className="row">
-                            <div className="col">
+                            <div className="col submit-btn">
                                 <Link
-                                    to="/"
+                                    to={`${process.env.PUBLIC_URL}/`}
                                     className="btn get-green d-inline-block mt-4 mb-3 mb-lg-0"
                                 >
                                     GO TO HOMEPAGE

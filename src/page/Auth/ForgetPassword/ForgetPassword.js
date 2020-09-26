@@ -37,11 +37,13 @@ const ForgetPassword = () => {
                                     />
                                 </div>
                             </div>
-                            <input
-                                type="submit"
-                                className="btn get-green mt-4 mb-3 mb-lg-0"
-                                value="SUBMIT"
-                            ></input>
+                            <div className="submit-btn">
+                                <input
+                                    type="submit"
+                                    className="btn get-green mt-4 mb-3 mb-lg-0"
+                                    value="SUBMIT"
+                                ></input>
+                            </div>
                         </form>
                     </div>
                 </div>

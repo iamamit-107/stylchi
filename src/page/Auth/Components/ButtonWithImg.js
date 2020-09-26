@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const ButtonWithImg = () => {
     return (
-        <div className="d-flex mt-5 mt-lg-0">
+        <div className="d-flex mt-5 mt-lg-0 btn-with-img">
             <button className="btn customer-btn">
                 <img src={user} alt="" className="img-fluid" />
                 <p className="btn-text">
@@ -21,14 +21,6 @@ const ButtonWithImg = () => {
                     I’m a <br /> Partner
                 </p>
             </button>
-
-            <Link to={`${process.env.PUBLIC_URL}/thank-you`}>thank you</Link>
-            <Link to={`${process.env.PUBLIC_URL}/verification`}>
-                verifcation
-            </Link>
-            <Link to={`${process.env.PUBLIC_URL}/forget-password`}>
-                forget password
-            </Link>
         </div>
     );
 };

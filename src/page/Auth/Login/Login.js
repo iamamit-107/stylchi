@@ -6,6 +6,7 @@ import bg from "../../../assets/img/login/login-bg.png";
 import loginfooter from "../../../assets/img/login/login-footer.png";
 import LeftSide from "../Components/LeftSide";
 import ButtonWithImg from "../Components/ButtonWithImg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
     return (
@@ -27,14 +28,14 @@ const Login = () => {
                             justifyContent: "space-between",
                         }}
                     >
-                        <div className="px-3 px-lg-5">
+                        <div className="right-side">
                             {/* top two button component */}
                             <ButtonWithImg />
 
                             <div className="mt-5">
                                 <form>
                                     {/* email input */}
-                                    <div className="row mb-3">
+                                    <div className="row mb-2">
                                         <div className="col">
                                             <input
                                                 type="email"
@@ -46,12 +47,12 @@ const Login = () => {
                                     </div>
 
                                     {/* password field */}
-                                    <div className="row mb-3">
+                                    <div className="row mb-2">
                                         <div className="col">
                                             <input
                                                 type="password"
-                                                className="form-control"
-                                                placeholder="Password"
+                                                className="form-control login-pass"
+                                                placeholder="••••••••"
                                                 required
                                             />
                                         </div>
@@ -63,6 +64,30 @@ const Login = () => {
                                         value="LOGIN"
                                     ></input>
                                 </form>
+
+                                {/* TODO: Remove */}
+                                {/* to show the page */}
+                                <div>
+                                    <Link
+                                        to={`${process.env.PUBLIC_URL}/thank-you`}
+                                    >
+                                        thank you
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Link
+                                        to={`${process.env.PUBLIC_URL}/verification`}
+                                    >
+                                        verification
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Link
+                                        to={`${process.env.PUBLIC_URL}/forget-password`}
+                                    >
+                                        forget pass
+                                    </Link>
+                                </div>
                             </div>
                         </div>
 

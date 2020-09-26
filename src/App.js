@@ -6,13 +6,15 @@ import Login from "./page/Auth/Login/Login";
 import ForgetPassword from "./page/Auth/ForgetPassword/ForgetPassword";
 import Verification from "./page/Auth/Verification/Verification";
 import ThankYou from "./page/Auth/ThankYou/ThankYou";
+import Home from "./page/Home/Home";
 
 function App() {
     return (
         <Switch>
+            <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
             <Route
                 exact
-                path={`${process.env.PUBLIC_URL}/`}
+                path={`${process.env.PUBLIC_URL}/sign-up`}
                 component={Registration}
             />
             <Route

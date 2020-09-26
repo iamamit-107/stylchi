@@ -10,7 +10,7 @@ const LeftSide = () => {
                 <div className="d-flex mt-4">
                     <NavLink
                         exact
-                        to={`${process.env.PUBLIC_URL}/`}
+                        to={`${process.env.PUBLIC_URL}/sign-up`}
                         activeClassName="active"
                         className="login mr-4"
                     >

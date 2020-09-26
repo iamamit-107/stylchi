@@ -20,13 +20,13 @@ const Registration = () => {
                         <LeftSide />
                     </div>
 
-                    <div className="col-lg-8 px-lg-5">
+                    <div className="col-lg-8 right-side">
                         {/*  */}
                         <ButtonWithImg />
 
                         <div className="mt-5">
                             <form>
-                                <div className="row mb-3">
+                                <div className="row mb-2">
                                     <div className="col-md-6">
                                         <input
                                             type="text"
@@ -46,7 +46,7 @@ const Registration = () => {
                                 </div>
 
                                 {/* email input */}
-                                <div className="row mb-3">
+                                <div className="row mb-2">
                                     <div className="col">
                                         <input
                                             type="email"
@@ -58,7 +58,7 @@ const Registration = () => {
                                 </div>
 
                                 {/* password field */}
-                                <div className="row mb-3">
+                                <div className="row mb-2">
                                     <div className="col-md-6">
                                         <input
                                             type="password"
@@ -80,7 +80,7 @@ const Registration = () => {
                                             }}
                                         >
                                             <img src={rightsmall} alt="" />
-                                            <p>
+                                            <p className="mb-0">
                                                 password <br /> matched
                                             </p>
                                         </div>
@@ -106,7 +106,7 @@ const Registration = () => {
 
                                 {/* card field */}
                                 <div className="row mb-3">
-                                    <div className="col-lg-9">
+                                    <div className="col-lg-8">
                                         <div className="form-control">
                                             <div
                                                 style={{
@@ -167,7 +167,7 @@ const Registration = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-8 col-md-4 col-lg-3 mt-3 mt-lg-0">
+                                    <div className="col-8 col-md-4 col-lg-4 mt-3 mt-lg-0">
                                         <div className="form-control">
                                             <div
                                                 style={{

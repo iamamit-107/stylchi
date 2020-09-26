@@ -6,6 +6,25 @@
         background-size: cover;
         background-repeat: no-repeat;
         padding: 0;
+
+        @media screen and (max-width: 768px) {
+            background-position: inherit;
+        }
+    }
+
+    .right-side {
+        padding-left: 100px;
+        padding-right: 116px;
+
+        @media screen and (max-width: 768px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     .left-side {
@@ -37,6 +56,10 @@
                 line-height: 42px;
                 color: rgba(255, 255, 255, 0.4);
                 text-decoration: none;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 22px;
+                }
             }
 
             .active {
@@ -52,6 +75,11 @@
         width: 142px;
         height: 142px;
 
+        @media screen and (max-width: 576px) {
+            width: 125px;
+            height: 125px;
+        }
+
         .btn-text {
             font-family: Poppins;
             margin-top: 15px;
@@ -65,11 +93,16 @@
         .icon {
             position: absolute;
             top: -15px;
-            left: 145px;
+            left: 190px;
 
             @media screen and (max-width: 768px) {
                 top: 40px;
-                left: 120px;
+                left: 140px;
+            }
+
+            @media screen and (max-width: 576px) {
+                top: 40px;
+                left: 110px;
             }
         }
     }
@@ -80,6 +113,11 @@
         width: 142px;
         height: 142px;
         margin-left: 30px;
+
+        @media screen and (max-width: 576px) {
+            width: 125px;
+            height: 125px;
+        }
 
         .btn-text {
             font-family: Poppins;
@@ -138,7 +176,7 @@
 
     .password-match {
         display: inline-flex;
-        padding: 3px 15px;
+        padding: 4px 15px;
         background-repeat: no-repeat;
         position: absolute;
         top: 15px;
@@ -222,5 +260,26 @@
 
             color: #3f3d56;
         }
+    }
+
+    .login-pass {
+        &::placeholder {
+            font-size: 20px;
+        }
+    }
+}
+
+.right-side {
+    padding-left: 100px;
+    padding-right: 116px;
+
+    @media screen and (max-width: 768px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
