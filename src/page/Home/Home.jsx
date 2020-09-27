@@ -22,12 +22,20 @@ const Home = () => {
                             <h2>
                                 Beauty & Personal Care: <br /> Anytime, Anywhere
                             </h2>
-                            <div className="d-flex pt-5">
+                            <div className="d-flex pt-5 btn-group-banner">
                                 <button className="btn btn-venue">
-                                    <img src={venue} alt="" />
+                                    <img
+                                        src={venue}
+                                        alt=""
+                                        className="img-fluid"
+                                    />
                                 </button>
                                 <button className="btn btn-home">
-                                    <img src={home} alt="" />
+                                    <img
+                                        src={home}
+                                        alt=""
+                                        className="img-fluid"
+                                    />
                                 </button>
                             </div>
                             <div className="d-flex search-box mt-5">
