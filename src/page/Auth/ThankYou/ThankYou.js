@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 const ThankYou = () => {
     return (
         <div id="forget-pass">
-            <div className="container py-5 py-lg-0">
+            <div className="container py-lg-0">
                 <div
                     className="row align-items-center"
                     style={{ height: "100vh" }}
                 >
                     <div className="col-lg-5 text-center">
-                        <img src={img} alt="" className="img-fluid" />
+                        <img src={img} alt="" className="img-fluid main-img" />
                     </div>
-                    <div className="col-lg-7 px-lg-5 mt-5 mt-md-0">
+                    <div className="col-lg-7 px-lg-5 mt-md-0">
                         <h1>Thank you!</h1>
                         <p>
                             Your account has been created, start booking your

@@ -1,9 +1,15 @@
 #banner {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     height: 90vh;
     overflow: hidden;
+
+    @media screen and (max-width: 576px) {
+        background-position-x: 34%;
+        background-repeat: no-repeat;
+        background-size: inherit;
+        /* background-position: center; */
+    }
 
     .navbar-bg {
         padding: 30px 10px;
@@ -18,12 +24,12 @@
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 60px;
         color: #22223b;
 
         @media screen and (max-width: 576px) {
-            font-size: 16px;
+            font-size: 20px;
             line-height: 40px;
         }
     }
@@ -35,14 +41,19 @@
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
-        line-height: 24px;
-        display: flex;
+        line-height: 30px;
         padding: 10px 30px;
         color: #ffffff !important;
+
+        width: 143px;
+        height: 56px;
 
         @media screen and (max-width: 768px) {
             display: inline-block;
             margin-bottom: 10px !important;
+            width: 130px;
+            height: 45px;
+            line-height: 20px;
         }
     }
 
@@ -54,14 +65,19 @@
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
-        line-height: 24px;
-        display: flex;
+        line-height: 30px;
         padding: 10px 30px;
         color: #ffffff !important;
         margin-left: 10px;
 
+        width: 143px;
+        height: 56px;
+
         @media screen and (max-width: 768px) {
             display: inline-block;
+            width: 130px;
+            height: 45px;
+            line-height: 20px;
         }
     }
 
@@ -124,6 +140,7 @@
         font-size: 18px;
         line-height: 27px;
         color: #22223b;
+        background-color: #fff;
 
         margin-left: 5px;
         width: 200px;
@@ -194,6 +211,7 @@
     }
 }
 
+// slider in the banner section
 .slider-container {
     background: #f5f5f5;
     border: 1px solid #d7d7d7;
@@ -204,6 +222,18 @@
 
     position: relative;
     top: -60px;
+
+    @media screen and (max-width: 576px) {
+        top: -80px;
+        padding: 15px 30px;
+    }
+
+    img {
+        @media screen and (max-width: 576px) {
+            width: 40%;
+        }
+    }
+
     h5 {
         font-family: Poppins;
         font-style: normal;
@@ -213,6 +243,10 @@
         color: #22223b;
         margin-top: 10px;
         margin-bottom: 0;
+
+        @media screen and (max-width: 576px) {
+            font-size: 10px;
+        }
     }
 
     .slider-box {
@@ -222,6 +256,11 @@
         border-radius: 14px;
         width: 90% !important;
         padding: 15px 10px;
+
+        @media screen and (max-width: 576px) {
+            height: 90px;
+            padding: 10px 10px 10px 10px;
+        }
     }
 
     .slick-prev:before,
@@ -266,6 +305,866 @@
         @media screen and (max-width: 576px) {
             top: 50px;
             left: -45px;
+        }
+    }
+}
+
+// second slider css
+#second-slider {
+    margin-top: 30px;
+    .upper-text {
+        margin-bottom: 80px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 60px;
+            color: #22223b;
+            margin-bottom: 20px;
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            color: #4a4e69;
+
+            @media screen and (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .slider-box {
+        height: 400px;
+        padding: 15px 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .slider-divider {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    .heading-top {
+        background: #ffffff;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+        padding: 5px 15px;
+        align-items: center;
+        display: flex;
+
+        h5 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 120%;
+            color: #22223b;
+            margin-bottom: 0;
+        }
+
+        .float-right {
+            img {
+                position: relative;
+                top: 4px;
+            }
+        }
+    }
+
+    .heading-bottom {
+        h4 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 39px;
+            color: #ffffff;
+        }
+
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: capitalize;
+            color: #ffffff;
+        }
+    }
+
+    .slick-next:before {
+        font-family: "slick";
+        font-size: 50px;
+        line-height: 1;
+        opacity: 1;
+        color: #ece6e6fd;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        @media screen and (max-width: 576px) {
+            font-size: 35px;
+        }
+    }
+
+    .slick-next {
+        right: 6px;
+
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            right: 18px;
+        }
+
+        @media screen and (min-width: 577px) and (max-width: 768px) {
+            right: 20px;
+        }
+    }
+}
+
+// Book now section
+#book-now {
+    margin-top: 50px;
+    .row {
+        height: 706px;
+        background-image: url("../img/home/salon-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        padding: 0px 20px;
+        border-radius: 38px;
+        margin: 5px;
+
+        @media screen and (max-width: 576px) {
+            padding: 0px 0px;
+        }
+    }
+
+    .left-side {
+        height: 100%;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 70px;
+            color: #ffffff;
+
+            @media screen and (max-width: 576px) {
+                font-size: 18px;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .book-now-btn {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            background: #22bf69;
+            box-shadow: 0px 8px 14px rgba(34, 34, 59, 0.06);
+            border-radius: 6px;
+            // padding: 20px 40px;
+            width: 192px;
+            height: 64px;
+
+            @media screen and (max-width: 576px) {
+                width: 150px;
+                height: 40px;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%; /* Full width (cover the whole page) */
+        height: 20%; /* Full height (cover the whole page) */
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(34, 34, 59, 0) 0%,
+            rgba(34, 34, 59, 0.8) 100%
+        );
+
+        z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
+    }
+
+    .salon-card {
+        background-image: url("../img/home/salon-card-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 220px;
+        width: 370px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+        z-index: 2;
+
+        .salon-card-inner {
+            padding: 20px;
+        }
+
+        .profile-img {
+            @media screen and (max-width: 576px) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .rating {
+            @media screen and (max-width: 576px) {
+                width: 70%;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 250px;
+            background-position-x: 92%;
+        }
+    }
+
+    .right-side-book {
+        height: 94%;
+        overflow: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+            height: 36%;
+        }
+
+        @media screen and (max-width: 576px) {
+            height: 58%;
+        }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        //box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #f5e6cf;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #f5e6cfc0;
+    }
+}
+
+// DEALS section
+#deals {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .container {
+        padding-bottom: 50px;
+        border-bottom: 2px solid #e3e3e3;
+    }
+    .right-side {
+        h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 60px;
+            color: #22223b;
+            margin-bottom: 100px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            color: #4a4e69;
+            margin-bottom: 70px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .btn-explore {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            background: #22bf69;
+            box-shadow: 0px 8px 14px rgba(34, 34, 59, 0.06);
+            border-radius: 6px;
+            width: 250px;
+            height: 84px;
+
+            @media screen and (max-width: 768px) {
+                width: 200px;
+                height: 60px;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 150px;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    img {
+        @media screen and (max-width: 768px) {
+            max-width: 45%;
+        }
+        @media screen and (max-width: 576px) {
+            max-width: 65%;
+        }
+    }
+}
+
+// Offers Section css
+#offers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .container {
+        padding-bottom: 50px;
+        border-bottom: 2px solid #e3e3e3;
+    }
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 60px;
+        color: #22223b;
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 20px;
+        }
+    }
+
+    h4 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 70px;
+        color: #22223b;
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    h5 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 70px;
+        color: #22223b;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #22223b;
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+    .book-now {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        background: #22bf69;
+        box-shadow: 0px 8px 14px rgba(34, 34, 59, 0.06);
+        border-radius: 6px;
+        width: 250px;
+        height: 84px;
+
+        @media screen and (max-width: 768px) {
+            width: 160px;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 150px;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// refer section
+#Refer-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .container {
+        padding-bottom: 50px;
+        border-bottom: 2px solid #e3e3e3;
+    }
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 60px;
+        color: #22223b;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4a4e69;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    .img-text {
+        align-items: center;
+        margin-bottom: 10px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    .book-now {
+        margin-top: 50px;
+        margin-left: 40px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        background: #22bf69;
+        box-shadow: 0px 8px 14px rgba(34, 34, 59, 0.06);
+        border-radius: 6px;
+        width: 195px;
+        height: 56px;
+
+        @media screen and (max-width: 768px) {
+            width: 150px;
+            height: 50px;
+            margin-left: 0px;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 150px;
+            height: 50px;
+            margin-bottom: 40px;
+            margin-left: 0px;
+        }
+    }
+}
+
+// safety section
+#safety {
+    height: 728px;
+    background-image: url("../img/home/safety.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 768px) {
+        background-position-x: center;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .row {
+        height: 100%;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 70px;
+        color: #22223b;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #22223b;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    a {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        color: #000000;
+        text-decoration: none;
+
+        span {
+            margin-left: 15px;
+        }
+    }
+}
+
+// footer section
+#footer {
+    background: #151515;
+    padding-top: 60px;
+    margin-top: 80px;
+
+    .logo {
+        @media screen and (max-width: 576px) {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .social {
+        @media screen and (max-width: 576px) {
+            text-align: center;
+        }
+    }
+
+    .second-sec {
+        margin-top: 40px;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 80px;
+
+        .first-col {
+            @media screen and (max-width: 576px) {
+                text-align: center;
+            }
+        }
+
+        h1 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 70px;
+            color: #ffffff;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+        }
+
+        h5 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            color: #ffffff;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+
+        .border {
+            width: 50px;
+            height: 4px;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .btn-white1 {
+            background: #ffffff;
+            border-radius: 5px;
+            width: 168px;
+            height: 50px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: #4a4e69;
+
+            @media screen and (max-width: 768px) {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+
+        .btn-white2 {
+            background: #ffffff;
+            border-radius: 5px;
+            width: 360px;
+            height: 60px;
+            margin-top: 30px;
+
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #4a4e69;
+
+            @media screen and (max-width: 768px) {
+                width: 250px;
+                height: 40px;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 250px;
+                height: 40px;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+
+        li {
+            list-style: none;
+            margin-top: 25px;
+            @media screen and (max-width: 768px) {
+                margin-top: 20px;
+            }
+
+            a {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 33px;
+                color: #ffffff;
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .copy {
+        margin-bottom: 0;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.4);
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}
+
+// customer
+#customer {
+    padding-bottom: 70px;
+
+    .rating-big {
+        @media screen and (max-width: 576px) {
+            width: 40%;
+        }
+    }
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 70px;
+        color: #22223b;
+
+        margin-top: 40px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    h5 {
+        font-family: Poppins;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 40px;
+        color: #4a4e69;
+        margin-top: 30px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    h6 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 30px;
+        color: #22223b;
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    .btn1 {
+        background: #22bf69;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+
+        img {
+            position: relative;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 50px;
+
+            img {
+                position: relative;
+                top: -2px;
+                left: 1px;
+            }
+        }
+    }
+}
+
+#messenger {
+    img {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px;
+
+        @media screen and (max-width: 576px) {
+            bottom: 0px;
+            right: 0px;
+            width: 60px;
         }
     }
 }

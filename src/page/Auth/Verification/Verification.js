@@ -6,15 +6,15 @@ import rightsmall from "../../../assets/img/login/right.svg";
 const Verification = () => {
     return (
         <div id="forget-pass">
-            <div className="container py-5 py-lg-0">
+            <div className="container py-lg-0">
                 <div
                     className="row align-items-center"
                     style={{ height: "100vh" }}
                 >
                     <div className="col-lg-5 text-center">
-                        <img src={img} alt="" className="img-fluid" />
+                        <img src={img} alt="" className="img-fluid main-img" />
                     </div>
-                    <div className="col-lg-7 px-lg-5 mt-5 mt-md-0">
+                    <div className="col-lg-7 px-lg-5 mt-md-0">
                         <h1>Verification code sent!</h1>
                         <p>
                             Check your email inbox for a verification code and
@@ -22,7 +22,7 @@ const Verification = () => {
                         </p>
 
                         <form>
-                            <div className="row mb-5">
+                            <div className="row mb-0 mb-md-5">
                                 <div className="col mb-2 mb-lg-0">
                                     <input
                                         type="text"
@@ -72,13 +72,17 @@ const Verification = () => {
                                     />
                                 </div>
                                 <div className="col mb-2 mb-lg-0">
-                                    <img src={rightsmall} alt="" />
+                                    <img
+                                        src={rightsmall}
+                                        className="rightsmall"
+                                        alt=""
+                                    />
                                 </div>
                             </div>
                             <div className="submit-btn">
                                 <input
                                     type="submit"
-                                    className="btn get-green mt-4 mb-3 mb-lg-0"
+                                    className="btn get-green mt-0 mt-md-4 mb-3 mb-lg-0"
                                     value="SUBMIT"
                                 ></input>
                             </div>
